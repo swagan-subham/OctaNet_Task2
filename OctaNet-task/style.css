@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-image: url('https://images.hdqwalls.com/download/abstract-lines-dark-4k-mg-1600x900.jpg');
+    background-size: cover;
+    color: white;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-left: 20px;
+}
+
+.menuitem, .btn {
+    margin: 0.5rem;
+    padding-left: 50px;
+}
+
+.menuitem a, .btn button {
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn button {
+    background-color: rgb(252, 172, 25);
+    color: white;
+    font-size: medium;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    text-align: left;
+}
+
+.info h1 {
+    font-size: 30px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.img {
+    margin-top: 1rem;
+    max-width: 80%;
+    flex: 1;
+    text-align: left;
+}
+
+img {
+    max-width: auto;
+    height: 700px;
+}
+
+.msg {
+    margin-top: 2rem;
+    padding: 2rem;
+    font-size: 1rem;
+    font-family: sans-serif;
+    max-width: 600px;
+}
+
+/* Features Section */
+.features {
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.feature-item {
+    margin: 1rem 0;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 2rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Footer Section */
+.footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menuitem, .btn {
+        margin: 0.5rem 0;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .info h1 {
+        font-size: 2rem;
+    }
+
+    .msg {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .img {
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .info h1 {
+        font-size: 1.5rem;
+    }
+
+    .msg {
+        font-size: 0.875rem;
+    }
+}
